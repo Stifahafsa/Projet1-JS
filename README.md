@@ -56,9 +56,6 @@ The code uses the following JavaScript functions:
 - Transforming data with `map()`
 - Array manipulation in JavaScript
 
-Here’s a description for the exercise that you can include in your `README.md` file on GitHub:
-
----
 
 # Exercise 3 : Inscription Management with Total Fee Calculation
 
@@ -88,27 +85,49 @@ The code is divided into two main parts:
 - Functional programming concepts in JavaScript.
 
 
+# Exercise 4: Managing Student Inscriptions with Pure Functions
 
-# Exercise 4 : Inscription Management
+This project demonstrates how to manage a list of student inscriptions using various pure functions in JavaScript. The functions allow you to add, delete, and update inscriptions by both position and ID in the array.
 
-This project provides basic JavaScript functions to manage a list of student inscriptions. The following functionalities are implemented:
+## Features
 
-Features
-Add a New Inscription: Insert a new inscription into the list at a specified position.
-Delete an Inscription by Position: Remove an inscription from the list based on its position.
-Delete an Inscription by ID: Remove an inscription from the list using its unique ID.
-Update an Inscription by Position: Modify an existing inscription's details at a specified position.
-Update an Inscription by ID: Modify an existing inscription's details using its unique ID (ID remains unchanged).
-Code Overview
-The project includes several JavaScript functions to perform these actions, using methods like splice() and findIndex() to handle array manipulation efficiently.
+- **Pure Function to Insert an Inscription**: The `pureInsert` function allows adding a new inscription at a specific position within the `inscriptions` array.
+- **Delete an Inscription by Position**: The `pureDeleteByPosition` function deletes an inscription based on its position in the array.
+- **Delete an Inscription by ID**: The `pureDeleteByID` function deletes an inscription by searching for the given `id` in the array.
+- **Update an Inscription by Position**: The `pureUpdateByPosition` function updates the inscription at a specific position in the array.
+- **Update an Inscription by ID**: The `pureUpdateByID` function updates the inscription's information (name and field) by searching for the inscription with the provided `id`.
 
-Functions:
-pureInsert(id, nom, filiere, position) - Adds a new inscription at a specific position.
-pureDeleteByPosition(position) - Removes an inscription from the list by position.
-pureDeleteByID(id) - Removes an inscription using its ID.
-pureUpdateByPosition(id, nom, filiere, position) - Updates an inscription's details at a given position.
-pureUpdateByID(id, nom, filiere) - Updates an inscription's details based on its ID.
-How to Use
-Clone the repository to your local machine.
-Open the project in your favorite code editor.
-Run the provided JavaScript functions in a browser or any JavaScript environment to test the inscription management features.
+## Code Overview
+
+The project consists of five key functions that provide full control over the `inscriptions` array:
+
+1. **`pureInsert()`**: Adds a new inscription at the specified position in the array.
+2. **`pureDeleteByPosition()`**: Removes an inscription from a specific position.
+3. **`pureDeleteByID()`**: Deletes an inscription based on its unique `id`.
+4. **`pureUpdateByPosition()`**: Updates an inscription's data based on the array position.
+5. **`pureUpdateByID()`**: Updates an inscription by locating it through its `id`.
+
+
+### Output:
+- **Inserting a New Inscription**:
+  - A new inscription can be added at a specific position in the array.
+  
+- **Deleting by Position or ID**:
+  - The inscriptions at specified positions or with a particular ID are removed.
+  
+- **Updating by Position or ID**:
+  - Inscription data (name and field) is updated either by its position or by searching for the inscription by ID.
+
+## How to Use
+
+1. Clone the repository to your local machine.
+2. Open the project in your preferred code editor.
+3. Run the provided JavaScript code in a browser console or JavaScript environment to see how the functions for managing inscriptions work.
+
+## Concepts Covered
+
+- Using `splice()` for inserting and deleting elements in an array.
+- Searching arrays with `findIndex()` to locate items by ID.
+- Pure functions for immutability in JavaScript.
+
+
